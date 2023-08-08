@@ -1,0 +1,21 @@
+This extracts the coverart from the mp3s in my collection.
+
+This app is specifically designed to work with rpi and my collection, your milage may vary.
+
+## Compilation
+```
+git clone <this repo>
+cd <this repo>
+cargo run --release -- <path_to_mp3s>
+
+or
+
+git clone <this repo>
+cd <this repo>
+cargo build --release
+cp ./target/release/coverart /usr/bin/
+chmod +x /usr/bin/coverart
+chown root:root /usr/bin/coverart
+coverart <path_to_mp3s>
+```
+
